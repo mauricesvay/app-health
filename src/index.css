@@ -88,3 +88,15 @@ body {
     background: var(--purple-04);
     color: white;
 }
+
+.block {
+    background: white;
+    border-radius: 3px;
+}
+
+.block__title {
+    padding: 16px;
+    margin: 0;
+    color: var(--purple-01);
+    font-size: 24px;
+}

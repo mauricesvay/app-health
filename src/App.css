@@ -7,3 +7,7 @@
     background: var(--purple-01);
     color: white;
 }
+
+.App__content {
+    padding: 8px;
+}

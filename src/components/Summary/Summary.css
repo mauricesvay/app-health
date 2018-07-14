@@ -1,0 +1,28 @@
+.Summary__stats {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 16px;
+}
+
+.Summary__stat {
+    flex: 1 1 auto;
+    border-right: 1px solid var(--gray-04);
+    margin-right: 16px;
+}
+
+.Summary__stat:last-child {
+    border-right: 0;
+    margin-right: 0;
+}
+
+.Summary__figure {
+    display: block;
+    color: var(--purple-05);
+    font-weight: bold;
+}
+
+.Summary__label {
+    font-size: 14px;
+    color: var(--gray-03);
+}
