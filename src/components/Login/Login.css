@@ -1,0 +1,30 @@
+.Login__form {
+    position: absolute;
+    left: 50%;
+    top: 64px;
+    background: white;
+    border-radius: 3px;
+    padding: 32px;
+    transform: translateX(-50%);
+}
+
+.Login__title {
+    margin: 32px 0;
+    color: var(--purple-05);
+    text-align: center;
+}
+
+.Login__form label,
+.Login__form .button,
+.Login__form .input {
+    display: block;
+    margin: 8px 0;
+}
+
+.Login__form .button {
+    width: 100%;
+}
+
+.Login__error {
+    color: var(--red-02);
+}

@@ -1,0 +1,76 @@
+.ApplicationList {
+    position: relative;
+    flex: 0 0 240px;
+}
+.ApplicationList button {
+    appearance: none;
+    display: block;
+    width: 100%;
+    height: 48px;
+    padding: 0;
+    margin: 0;
+    border: 0;
+    border-radius: 3px;
+
+    background: var(--purple-02);
+    color: white;
+    font-family: 'Muli', sans-serif;
+    font-size: 16px;
+    text-align: left;
+    cursor: pointer;
+}
+
+.ApplicationList button:hover {
+    background: var(--purple-03);
+}
+
+.ApplicationList__list {
+    list-style: none;
+    position: absolute;
+    width: 240px;
+    top: 100%;
+    left: 0;
+    padding: 0;
+    margin: 0;
+
+    border-radius: 3px;
+    background: var(--purple-02);
+    box-shadow: 0 3px 10px rgba(0,0,0,0.3);
+
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.1s;
+}
+.ApplicationList__list.--visible {
+    opacity: 1;
+    pointer-events: auto;
+    transition: opacity 0.2s;
+}
+
+.ApplicationList__list li {
+    margin: 0;
+}
+
+.ApplicationList__list li.--selected,
+.ApplicationList__list li:hover {
+    background: var(--purple-03);
+}
+
+.ApplicationList__item {
+    padding: 8px;
+}
+.ApplicationList__item b {
+    display: block;
+    font-size: 14px;
+    line-height: 22px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.ApplicationList__item span {
+    display: block;
+    font-size: 10px;
+    line-height: 1;
+    color: rgba(255,255,255, 0.5);
+    text-transform: uppercase;
+}

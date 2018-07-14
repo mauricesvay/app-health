@@ -1,5 +1,90 @@
+@import 'https://fonts.googleapis.com/css?family=Muli';
+
+:root {
+    --gray-01: #333333;
+    --gray-02: #b0b0b0;
+    --gray-03: #aeb1b5;
+    --gray-04: #e4e4e4;
+    --gray-05: #e8e6ea;
+    --gray-06: #f2f2f2;
+    --purple-01: #1e0936;
+    --purple-02: #391166;
+    --purple-03: #471680;
+    --purple-04: #423da8;
+    --purple-05: #4842b7;
+    --purple-06: #f8f7ff;
+    --green-01: #1ed760;
+    --red-01: #fa4f3e;
+    --red-02: #f93d2a;
+    --orange-01: #fe8727;
+    --orange-02: #ffa400;
+    --orange-03: #fdcc68;
+}
+
+* {
+    box-sizing: border-box;
+}
+
 body {
-  margin: 0;
-  padding: 0;
-  font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    font-family: 'Muli', sans-serif;
+    background: var(--gray-06);
+    color: var(--gray-01);
+}
+
+.input.--text {
+    display: inline-block;
+    padding: 3px 8px;
+
+    border: 1px solid var(--gray-03);
+    border-radius: 3px;
+
+    font-family: 'Muli', sans-serif;
+    font-size: 16px;
+    color: var(--gray-01);
+}
+
+.input.--large {
+    padding: 7px 8px;
+}
+
+.button {
+    display: inline-block;
+    padding: 4px 8px;
+    border: 0;
+    border-radius: 3px;
+
+    appearance: none;
+    background: var(--gray-03);
+    color: white;
+
+    font-family: 'Muli', sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+
+    cursor: pointer;
+}
+
+.button:hover {
+    background: var(--gray-02);
+    color: white;
+}
+
+.button:disabled {
+    opacity: 0.5;
+}
+
+.button.--large {
+    padding: 8px 16px;
+}
+
+.button.--primary {
+    background: var(--purple-05);
+    color: white;
+}
+
+.button.--primary:hover {
+    background: var(--purple-04);
+    color: white;
 }
