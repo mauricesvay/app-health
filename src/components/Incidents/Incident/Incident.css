@@ -1,0 +1,25 @@
+.Incident {
+    border-bottom: 1px solid var(--gray-04);
+    padding: 16px;
+}
+
+.Incident:first-of-type {
+    border-top: 1px solid var(--gray-04);
+}
+
+.Incident__kind {
+    margin-bottom: 4px;
+    font-size: 10px;
+    text-transform: uppercase;
+    color: var(--gray-03);
+}
+
+.Incident__title {
+    display: block;
+    margin: 0;
+    color: var(--purple-01);
+}
+
+.Incident__duration {
+    color: var(--gray-03);
+}

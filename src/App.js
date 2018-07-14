@@ -5,6 +5,7 @@ import ApplicationsList from './components/ApplicationsList';
 import HeaderUser from './components/HeaderUser';
 import Login from './components/Login';
 import Summary from './components/Summary';
+import Incidents from './components/Incidents';
 
 import './App.css';
 
@@ -18,7 +19,8 @@ class App extends Component {
             currentApplication: null,
             currentUser: null,
             hosts: null,
-            timeline: null
+            timeline: null,
+            incidents: null
         };
     }
 
@@ -56,6 +58,13 @@ class App extends Component {
             .then((timelineResponse) => {
                 this.setState({
                     timeline: timelineResponse.data
+                });
+            });
+        this.api
+            .getAppIncidents(this.state.currentApplication)
+            .then((incidentsResponse) => {
+                this.setState({
+                    incidents: incidentsResponse.data
                 });
             });
     };
@@ -99,6 +108,11 @@ class App extends Component {
                         <Summary
                             hosts={this.state.hosts}
                             timeline={this.state.timeline}
+                        />
+                        <Incidents
+                            hosts={this.state.hosts}
+                            timeline={this.state.timeline}
+                            incidents={this.state.incidents}
                         />
                     </div>
                 </div>

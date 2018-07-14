@@ -1,0 +1,25 @@
+.Incidents__empty {
+    padding: 64px;
+    text-align: center;
+    color: var(--gray-03);
+}
+
+.Incidents__list {
+    width: 100%;
+    table-layout: fixed;
+    border-collapse: collapse;
+}
+
+.Incidents__list th {
+    color: var(--gray-03);
+    text-align: left;
+    font-size: 14px;
+    text-transform: uppercase;
+    padding: 16px;
+}
+
+.Incidents__list td {
+    border-top: 1px solid var(--gray-05);
+    padding: 16px;
+    vertical-align: middle;
+}

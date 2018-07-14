@@ -92,6 +92,7 @@ body {
 .block {
     background: white;
     border-radius: 3px;
+    margin: 8px;
 }
 
 .block__title {
