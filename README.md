@@ -25,6 +25,7 @@ To run the app locally:
     -   human-format for formatting numbers
     -   country-data for displaying country flags
 -   It was mostly tested with the demo app provided by Sqreen.
+-   Styles are vanilla CSS, following a BEM-ish convention
 
 ## Things that could be improved
 
