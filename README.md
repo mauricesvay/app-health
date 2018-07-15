@@ -8,21 +8,26 @@ Visit [https://mauricesvay.github.io/app-health/](https://mauricesvay.github.io/
 
 To run the app locally:
 
-* Clone the repository.
-* Install dependencies: `npm install`.
-* Start the app: `npm start`
-* The app is now available at [http://localhost:300/](http://localhost:300/)
+-   Clone the repository.
+-   Install dependencies: `npm install`.
+-   Start the app: `npm start`
+-   The app is now available at [http://localhost:300/](http://localhost:300/)
 
 ## Technical details
 
-* The app was bootstrapped with `create-react-app`
-* State is managed with `setState`. It wasn't complex enough to require something like `redux`.
-* It was mostly tested with the demo app provided by Sqreen.
+-   The app was bootstrapped with `create-react-app`
+-   State is managed with `setState`. It wasn't complex enough to require something like `redux`.
+-   It was mostly tested with the demo app provided by Sqreen.
 
 ## Things that could be improved
 
-* Persist authentication (with cookies for example)
-* Display more data provided by the API
-* Improve browser compatibility
-* Implement "click outside" for application list
-* And many more thing…
+-   Persist authentication (with cookies for example)
+-   Display more data provided by the API
+-   Improve browser compatibility
+-   Implement "click outside" for application list
+-   And many more thing…
+
+## For devs
+
+-   See [Getting started](#getting-started)
+-   To deploy, `npm run deploy`
