@@ -115,7 +115,6 @@ class Visualization extends Component {
     }
 
     render() {
-        const data = this.getData();
         return (
             <div className="Visualization block">
                 <h1 className="block__title">Monitoring</h1>
