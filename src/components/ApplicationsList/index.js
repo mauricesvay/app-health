@@ -1,6 +1,16 @@
 import React, {Component} from 'react';
 import './ApplicationList.css';
 
+function getAppClassName(app, currentAppId) {
+    return [
+        'ApplicationList__item',
+        app.enabled ? '--enabled' : '',
+        app._id === currentAppId ? '--selected' : ''
+    ]
+        .filter((c) => c !== '')
+        .join(' ');
+}
+
 class ApplicationsList extends Component {
     constructor(props) {
         super(props);
@@ -29,36 +39,30 @@ class ApplicationsList extends Component {
             return curr._id === this.props.currentApplication ? curr : acc;
         }, {});
 
+        const currentAppClassNames = [
+            'ApplicationList__item',
+            currentApp.enabled ? '--enabled' : ''
+        ].join(' ');
+
+        const appListClassNames = [
+            'ApplicationList__list',
+            this.state.isOpen ? '--visible' : ''
+        ].join(' ');
+
         return (
             <div className="ApplicationList">
                 <button onClick={this.toggleOpen}>
-                    <div
-                        className={[
-                            'ApplicationList__item',
-                            currentApp.enabled ? '--enabled' : ''
-                        ].join(' ')}
-                    >
+                    <div className={currentAppClassNames}>
                         <b>{currentApp.name}</b>
                         <span>{currentApp.environment}</span>
                     </div>
                 </button>
-                <ul
-                    className={[
-                        'ApplicationList__list',
-                        this.state.isOpen ? '--visible' : ''
-                    ].join(' ')}
-                >
+                <ul className={appListClassNames}>
                     {this.props.applications.map((app) => {
-                        const classNames = [
-                            'ApplicationList__item',
-                            app.enabled ? '--enabled' : '',
-                            app._id === this.props.currentApplication
-                                ? '--selected'
-                                : ''
-                        ]
-                            .filter((c) => c !== '')
-                            .join(' ');
-
+                        const classNames = getAppClassName(
+                            app,
+                            this.props.currentApplication
+                        );
                         return (
                             <li
                                 key={app._id}
