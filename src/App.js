@@ -106,16 +106,22 @@ class App extends Component {
                         <HeaderUser currentUser={this.state.currentUser} />
                     </header>
                     <div className="App__content">
-                        <Summary
-                            hosts={this.state.hosts}
-                            timeline={this.state.timeline}
-                        />
-                        <Visualization timeline={this.state.timeline}/>
-                        <Incidents
-                            hosts={this.state.hosts}
-                            timeline={this.state.timeline}
-                            incidents={this.state.incidents}
-                        />
+                        <div className="flex --w100">
+                            <Summary
+                                hosts={this.state.hosts}
+                                timeline={this.state.timeline}
+                            />
+                        </div>
+                        <div className="flex --w50">
+                            <Visualization timeline={this.state.timeline} />
+                        </div>
+                        <div className="flex --w50">
+                            <Incidents
+                                hosts={this.state.hosts}
+                                timeline={this.state.timeline}
+                                incidents={this.state.incidents}
+                            />
+                        </div>
                     </div>
                 </div>
             );
