@@ -92,7 +92,7 @@ body {
 .block {
     background: white;
     border-radius: 3px;
-    margin: 8px;
+    margin: 8px 8px;
 }
 
 .block__title {
@@ -100,4 +100,30 @@ body {
     margin: 0;
     color: var(--purple-01);
     font-size: 24px;
+}
+
+.emptystate {
+    padding: 64px;
+    text-align: center;
+    color: var(--gray-03);
+}
+
+.flex {
+    flex: 1 1 auto;
+    overflow: hidden;
+}
+
+.flex.--w50 {
+    flex: 0 0 50%;
+}
+
+.flex.--w100 {
+    flex: 0 0 100%;
+}
+
+@media screen and (max-width: 1024px) {
+    .flex.--w50,
+    .flex.--w100 {
+        flex: 0 0 100%;
+    }
 }

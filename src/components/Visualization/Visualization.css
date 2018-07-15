@@ -1,0 +1,13 @@
+.Visualization__chart {
+    box-sizing: border-box;
+    padding: 16px;
+    width: 100%;
+    overflow: hidden;
+}
+
+.Visualization__chart h2 {
+    color: var(--gray-03);
+    text-align: left;
+    font-size: 14px;
+    text-transform: uppercase;
+}

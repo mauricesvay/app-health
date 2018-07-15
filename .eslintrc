@@ -1,4 +1,3 @@
 {
-    "plugins": ["react"],
     "extends": ["react-app", "prettier", "prettier/react"]
 }

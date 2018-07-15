@@ -6,6 +6,7 @@ import HeaderUser from './components/HeaderUser';
 import Login from './components/Login';
 import Summary from './components/Summary';
 import Incidents from './components/Incidents';
+import Visualization from './components/Visualization';
 
 import './App.css';
 
@@ -109,6 +110,7 @@ class App extends Component {
                             hosts={this.state.hosts}
                             timeline={this.state.timeline}
                         />
+                        <Visualization timeline={this.state.timeline}/>
                         <Incidents
                             hosts={this.state.hosts}
                             timeline={this.state.timeline}

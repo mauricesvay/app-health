@@ -8,13 +8,12 @@
     "dayjs": "^1.7.4",
     "human-format": "^0.10.0",
     "react": "^16.4.1",
-    "react-dom": "^16.4.1"
+    "react-dom": "^16.4.1",
+    "recharts": "^1.0.1"
   },
   "devDependencies": {
     "eslint": "^5.1.0",
     "eslint-config-prettier": "^2.9.0",
-    "eslint-config-react-app": "^2.1.0",
-    "eslint-plugin-react": "^7.10.0",
     "react-scripts": "1.1.4"
   },
   "scripts": {

@@ -5,7 +5,9 @@ import './Incidents.css';
 class Incidents extends Component {
     renderItems() {
         if (!this.props.incidents || this.props.incidents.length === 0) {
-            return <div className="Incidents__empty">No incidents</div>;
+            return (
+                <div className="Incidents__empty emptystate">No incidents</div>
+            );
         }
 
         const rows = this.props.incidents.map((incident) => {
