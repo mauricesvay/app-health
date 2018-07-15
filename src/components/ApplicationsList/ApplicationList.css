@@ -35,7 +35,7 @@
 
     border-radius: 3px;
     background: var(--purple-02);
-    box-shadow: 0 3px 10px rgba(0,0,0,0.3);
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.3);
 
     opacity: 0;
     pointer-events: none;
@@ -67,10 +67,22 @@
     overflow: hidden;
     text-overflow: ellipsis;
 }
+
+.ApplicationList__item.--enabled b:after {
+    content: '';
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: var(--green-01);
+    box-shadow: 0 0 0px 1px #77ffa7, 0 0 0px 2px rgba(0, 0, 0, 0.5);
+    margin-left: 8px;
+}
+
 .ApplicationList__item span {
     display: block;
     font-size: 10px;
     line-height: 1;
-    color: rgba(255,255,255, 0.5);
+    color: rgba(255, 255, 255, 0.5);
     text-transform: uppercase;
 }

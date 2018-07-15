@@ -32,7 +32,12 @@ class ApplicationsList extends Component {
         return (
             <div className="ApplicationList">
                 <button onClick={this.toggleOpen}>
-                    <div className="ApplicationList__item">
+                    <div
+                        className={[
+                            'ApplicationList__item',
+                            currentApp.enabled ? '--enabled' : ''
+                        ].join(' ')}
+                    >
                         <b>{currentApp.name}</b>
                         <span>{currentApp.environment}</span>
                     </div>
