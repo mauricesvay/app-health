@@ -6,6 +6,7 @@
 }
 
 .Visualization__chart h2 {
+    margin: 0 0 16px 0;
     color: var(--gray-03);
     text-align: left;
     font-size: 14px;

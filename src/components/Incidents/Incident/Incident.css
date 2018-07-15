@@ -21,5 +21,6 @@
 }
 
 .Incident__duration {
+    display: block;
     color: var(--gray-03);
 }

@@ -48,7 +48,7 @@ class Incident extends Component {
                 false
             );
             if (diff > 0) {
-                return `(${humanDuration(diff)} long)`;
+                return `${humanDuration(diff)} long`;
             }
         }
         return null;
